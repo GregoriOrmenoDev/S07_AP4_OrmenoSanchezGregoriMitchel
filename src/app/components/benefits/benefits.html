@@ -1,0 +1,12 @@
+<section class="beneficios" id="beneficios">
+  <h2>⭐ ¿Por qué elegirnos?</h2>
+  <p class="subtitulo">Ventajas que nos hacen únicos</p>
+
+  <div class="grid-beneficios">
+    <div class="beneficio-card" *ngFor="let b of beneficios">
+      <div class="icono">{{ b.icono }}</div>
+      <h3>{{ b.titulo }}</h3>
+      <p>{{ b.descripcion }}</p>
+    </div>
+  </div>
+</section>

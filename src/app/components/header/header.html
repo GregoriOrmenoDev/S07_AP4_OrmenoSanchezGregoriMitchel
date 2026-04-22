@@ -1,0 +1,8 @@
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">⚔️ NexusGames</div>
+    <nav>
+      <a *ngFor="let link of links" (click)="scrollTo(link)">{{ link }}</a>
+    </nav>
+  </div>
+</header>

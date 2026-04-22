@@ -1,0 +1,18 @@
+<section class="catalogo" id="catalogo">
+  <h2>🕹️ Catálogo de Juegos</h2>
+  <p class="subtitulo">Los títulos más populares del momento</p>
+
+  <div class="grid">
+    <div class="card" *ngFor="let juego of juegos">
+      <img [src]="juego.imagen" [alt]="juego.nombre">
+      <div class="card-body">
+        <h3>{{ juego.nombre }}</h3>
+        <span class="genero">{{ juego.genero }}</span>
+        <div class="card-footer">
+          <strong>{{ juego.precio }}</strong>
+          <button (click)="comprar(juego.nombre)">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

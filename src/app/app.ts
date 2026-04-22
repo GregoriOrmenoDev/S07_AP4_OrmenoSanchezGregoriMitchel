@@ -1,11 +1,15 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.html',
   standalone: false,
-  styleUrl: './app.css'
+  template: `
+    <app-header></app-header>
+    <app-hero></app-hero>
+    <app-courses></app-courses>
+    <app-benefits></app-benefits>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+  `
 })
-export class App {
-  protected readonly title = signal('edusmart-landing');
-}
+export class AppComponent { }

@@ -1,0 +1,22 @@
+<section class="contacto" id="contacto">
+  <h2>📩 Contáctanos</h2>
+  <p class="subtitulo">¿Tienes dudas? Escríbenos y te respondemos pronto</p>
+
+  <div class="form-container">
+    <div *ngIf="enviado" class="exito">✅ ¡Mensaje enviado! Pronto te contactaremos.</div>
+
+    <div class="campo">
+      <label>Nombre</label>
+      <input [(ngModel)]="nombre" placeholder="Tu nombre completo">
+    </div>
+    <div class="campo">
+      <label>Correo</label>
+      <input [(ngModel)]="correo" placeholder="tu@correo.com" type="email">
+    </div>
+    <div class="campo">
+      <label>Mensaje</label>
+      <textarea [(ngModel)]="mensaje" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
+    </div>
+    <button (click)="enviar()">Enviar mensaje 🚀</button>
+  </div>
+</section>
